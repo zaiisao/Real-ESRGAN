@@ -1,3 +1,10 @@
+import logging
+from PIL import Image
+
+# Set logging level for PIL to ERROR
+logging.getLogger('PIL').setLevel(logging.ERROR)
+
+
 # flake8: noqa
 import os.path as osp
 from basicsr.train import train_pipeline
